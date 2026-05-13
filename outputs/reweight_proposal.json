@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-13T00:09:06+00:00",
+  "vertical": "insurance",
+  "window_days": 30,
+  "outcomes_in_window": 120,
+  "positive_outcomes": 29,
+  "current_weights": {
+    "industry_match": 0.4,
+    "urgency": 0.25,
+    "state_footprint_overlap": 0.2,
+    "engagement": 0.15
+  },
+  "proposed_weights": {
+    "industry_match": 0.3883,
+    "urgency": 0.2718,
+    "state_footprint_overlap": 0.1942,
+    "engagement": 0.1456
+  },
+  "proposal": {
+    "adjustment": {
+      "urgency": 0.03
+    },
+    "rationale": "Higher-urgency signals converted at 2.4x the rate of mid-urgency in the sample period; nudging urgency weight up."
+  },
+  "claude_usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "status": "PENDING_HUMAN_REVIEW",
+  "review_note": "Edit data/scoring_config.yaml manually if approved. This file is informational only."
+}

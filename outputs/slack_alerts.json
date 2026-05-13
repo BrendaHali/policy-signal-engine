@@ -1,0 +1,542 @@
+[
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_034",
+    "account_name": "Lowe's",
+    "owner_ae": "ae_williams",
+    "bill_identifier": "HB 117",
+    "bill_title": "Food service establishments; require notification of the country of origin of seafood items",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB117/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Lowe's"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 117 (GA)*\nMandates country-of-origin notification for seafood at food service establishments; signed (Act 426).\n*Latest action:* Act 426"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_williams  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/HB117/|Open bill>"
+        }
+      }
+    ],
+    "message": "1. Why now \u2014 NC HB 117 authorizes Topsail Beach parking fees; reported favorably. 2. Why this account \u2014 Lowe's NC store traffic and contractor parking arrangements in coastal NC could see knock-on effects. 3. Suggested open \u2014 Frame as early signal on NC coastal municipal revenue moves."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_021",
+    "account_name": "UnitedHealth Group",
+    "owner_ae": "ae_lopez",
+    "bill_identifier": "SB 162",
+    "bill_title": "Georgia Composite Medical Board; implement an automated credentialing system for healthcare providers in this state; provide",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/SB162/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 UnitedHealth Group"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*SB 162 (GA)*\nRequires Composite Medical Board to implement automated provider credentialing system; signed (Act 408).\n*Latest action:* Act 408"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_lopez  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/SB162/|Open bill>"
+        }
+      }
+    ],
+    "message": "UnitedHealth exposed: GA SB 162 (Act 408) requires automated provider credentialing via Composite Medical Board. UHC's GA provider network integration needs ownership today. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_027",
+    "account_name": "Centene",
+    "owner_ae": "ae_chen",
+    "bill_identifier": "SB 162",
+    "bill_title": "Georgia Composite Medical Board; implement an automated credentialing system for healthcare providers in this state; provide",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/SB162/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Centene"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*SB 162 (GA)*\nRequires Composite Medical Board to implement automated provider credentialing system; signed (Act 408).\n*Latest action:* Act 408"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_chen  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/SB162/|Open bill>"
+        }
+      }
+    ],
+    "message": "Centene exposed: GA SB 162 (Act 408) mandates automated credentialing through state board. Centene Medicaid plans in GA need credentialing flow updates. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_021",
+    "account_name": "UnitedHealth Group",
+    "owner_ae": "ae_lopez",
+    "bill_identifier": "HB 1329",
+    "bill_title": "Controlled substances; Schedule I; provide certain provisions",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1329/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 UnitedHealth Group"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1329 (GA)*\nSchedule I controlled substances provisions; signed (Act 390).\n*Latest action:* Act 390"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_lopez  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/HB1329/|Open bill>"
+        }
+      }
+    ],
+    "message": "UnitedHealth exposed: GA HB 1329 (Act 390) modifies Schedule I controlled substances provisions. PA workflows and pharmacy benefit ops in GA affected. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_027",
+    "account_name": "Centene",
+    "owner_ae": "ae_chen",
+    "bill_identifier": "HB 1329",
+    "bill_title": "Controlled substances; Schedule I; provide certain provisions",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1329/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Centene"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1329 (GA)*\nSchedule I controlled substances provisions; signed (Act 390).\n*Latest action:* Act 390"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_chen  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/HB1329/|Open bill>"
+        }
+      }
+    ],
+    "message": "Centene exposed: GA HB 1329 (Act 390) updates Schedule I controlled substances. Centene GA Medicaid PA processes need same-day review. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_003",
+    "account_name": "Progressive",
+    "owner_ae": "ae_patel",
+    "bill_identifier": "HB 1015",
+    "bill_title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Progressive"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1015 (GA)*\nRevises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386).\n*Latest action:* Act 386"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_patel  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/HB1015/|Open bill>"
+        }
+      }
+    ],
+    "message": "Progressive exposed: GA HB 1015 (Act 386) changes Self-insurers Guaranty Trust Fund funded levels. Progressive's GA commercial auto self-insurance exposure needs assessment recalc. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_011",
+    "account_name": "JPMorgan Chase",
+    "owner_ae": "ae_lopez",
+    "bill_identifier": "HB 1015",
+    "bill_title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 JPMorgan Chase"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1015 (GA)*\nRevises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386).\n*Latest action:* Act 386"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_lopez  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/HB1015/|Open bill>"
+        }
+      }
+    ],
+    "message": "JPMorgan Chase exposed: GA HB 1015 (Act 386) revises Self-insurers Guaranty Trust Fund. JPM's GA commercial banking clients with self-insured programs face new assessment math. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_018",
+    "account_name": "Capital One",
+    "owner_ae": "ae_patel",
+    "bill_identifier": "HB 1015",
+    "bill_title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Capital One"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1015 (GA)*\nRevises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386).\n*Latest action:* Act 386"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_patel  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/HB1015/|Open bill>"
+        }
+      }
+    ],
+    "message": "Capital One exposed: GA HB 1015 (Act 386) revises Self-insurers Guaranty Trust Fund. Capital One commercial book in GA needs client-facing summary today. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_018",
+    "account_name": "Capital One",
+    "owner_ae": "ae_patel",
+    "bill_identifier": "SB 452",
+    "bill_title": "Retirement and Pension; maximum employer contribution to a 401(k) for certain state law enforcement officers; increase",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/SB452/",
+    "score": 1.0,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Capital One"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*SB 452 (GA)*\nIncreases maximum 401(k) employer contribution for state law enforcement officers; signed (Act 414).\n*Latest action:* Act 414"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_patel  \u2022  *Score:* 1.0  \u2022  <https://openstates.org/ga/bills/2025_26/SB452/|Open bill>"
+        }
+      }
+    ],
+    "message": "Capital One exposed: GA SB 452 (Act 414) raises 401(k) cap for state law enforcement. Capital One retirement plan administration in GA needs cap-rule update pushed. Score 1.0."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_032",
+    "account_name": "Target",
+    "owner_ae": "ae_chen",
+    "bill_identifier": "HB 117",
+    "bill_title": "Food service establishments; require notification of the country of origin of seafood items",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB117/",
+    "score": 0.985,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Target"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 117 (GA)*\nMandates country-of-origin notification for seafood at food service establishments; signed (Act 426).\n*Latest action:* Act 426"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_chen  \u2022  *Score:* 0.985  \u2022  <https://openstates.org/ga/bills/2025_26/HB117/|Open bill>"
+        }
+      }
+    ],
+    "message": "Target exposed: GA HB 117 (Act 426) mandates seafood country-of-origin notification at food service establishments. Target GA store food service ops need signage/POS updates. Score 0.985."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_024",
+    "account_name": "Cigna",
+    "owner_ae": "ae_williams",
+    "bill_identifier": "SB 162",
+    "bill_title": "Georgia Composite Medical Board; implement an automated credentialing system for healthcare providers in this state; provide",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/SB162/",
+    "score": 0.985,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Cigna"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*SB 162 (GA)*\nRequires Composite Medical Board to implement automated provider credentialing system; signed (Act 408).\n*Latest action:* Act 408"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_williams  \u2022  *Score:* 0.985  \u2022  <https://openstates.org/ga/bills/2025_26/SB162/|Open bill>"
+        }
+      }
+    ],
+    "message": "Cigna exposed: GA SB 162 (Act 408) mandates automated provider credentialing. Cigna GA network integration with state platform needs an owner. Score 0.985."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_024",
+    "account_name": "Cigna",
+    "owner_ae": "ae_williams",
+    "bill_identifier": "HB 1329",
+    "bill_title": "Controlled substances; Schedule I; provide certain provisions",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1329/",
+    "score": 0.985,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Cigna"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1329 (GA)*\nSchedule I controlled substances provisions; signed (Act 390).\n*Latest action:* Act 390"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_williams  \u2022  *Score:* 0.985  \u2022  <https://openstates.org/ga/bills/2025_26/HB1329/|Open bill>"
+        }
+      }
+    ],
+    "message": "Cigna exposed: GA HB 1329 (Act 390) Schedule I changes. Cigna GA pharmacy benefit ops and PA flows need update. Score 0.985."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_020",
+    "account_name": "American Express",
+    "owner_ae": "ae_garcia",
+    "bill_identifier": "HB 1015",
+    "bill_title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+    "score": 0.985,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 American Express"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 1015 (GA)*\nRevises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386).\n*Latest action:* Act 386"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_garcia  \u2022  *Score:* 0.985  \u2022  <https://openstates.org/ga/bills/2025_26/HB1015/|Open bill>"
+        }
+      }
+    ],
+    "message": "American Express exposed: GA HB 1015 (Act 386) Self-insurers Guaranty Trust Fund changes. Amex small business card client base in GA includes self-insured employers facing new assessment math. Score 0.985."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_020",
+    "account_name": "American Express",
+    "owner_ae": "ae_garcia",
+    "bill_identifier": "SB 452",
+    "bill_title": "Retirement and Pension; maximum employer contribution to a 401(k) for certain state law enforcement officers; increase",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/SB452/",
+    "score": 0.985,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 American Express"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*SB 452 (GA)*\nIncreases maximum 401(k) employer contribution for state law enforcement officers; signed (Act 414).\n*Latest action:* Act 414"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_garcia  \u2022  *Score:* 0.985  \u2022  <https://openstates.org/ga/bills/2025_26/SB452/|Open bill>"
+        }
+      }
+    ],
+    "message": "American Express exposed: GA SB 452 (Act 414) raises 401(k) cap for state law enforcement. Amex public-sector plan relationships in GA need cap-rule push. Score 0.985."
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "channel": "#gtm-policy-alerts",
+    "account_id": "acc_035",
+    "account_name": "Costco",
+    "owner_ae": "ae_garcia",
+    "bill_identifier": "HB 117",
+    "bill_title": "Food service establishments; require notification of the country of origin of seafood items",
+    "bill_state": "GA",
+    "bill_url": "https://openstates.org/ga/bills/2025_26/HB117/",
+    "score": 0.955,
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": ":rotating_light: Urgent policy signal \u2014 Costco"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*HB 117 (GA)*\nMandates country-of-origin notification for seafood at food service establishments; signed (Act 426).\n*Latest action:* Act 426"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Owner:* ae_garcia  \u2022  *Score:* 0.955  \u2022  <https://openstates.org/ga/bills/2025_26/HB117/|Open bill>"
+        }
+      }
+    ],
+    "message": "Costco exposed: GA HB 117 (Act 426) mandates seafood country-of-origin notification at food service. Costco GA warehouse food courts and seafood departments need signage/labeling updates. Score 0.955."
+  }
+]

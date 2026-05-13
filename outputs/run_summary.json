@@ -1,0 +1,39 @@
+{
+  "run_at": "2026-05-13T00:08:13+00:00",
+  "mode": "live",
+  "states": [
+    "ca",
+    "tx",
+    "fl",
+    "ny",
+    "pa",
+    "il",
+    "oh",
+    "ga",
+    "nc",
+    "mi"
+  ],
+  "since_days_window": 30,
+  "bills_fetched": 92,
+  "bills_classified": 92,
+  "matches_above_threshold": 383,
+  "after_per_ae_caps": {
+    "hubspot_tasks": 15,
+    "sequences": 25,
+    "slack_alerts": 15
+  },
+  "per_ae_caps": {
+    "hubspot": 3,
+    "sequence": 5,
+    "slack": 3
+  },
+  "claude_usage_estimated": {
+    "classifier_input_tokens": 36800,
+    "classifier_output_tokens": 13800,
+    "drafter_opus_calls": 15,
+    "drafter_sonnet_calls": 25,
+    "drafter_slack_calls": 15
+  },
+  "estimated_cost_usd": 0.6496,
+  "note": "This run's classifications and briefings were produced by a Claude Sonnet/Opus pass during the build. To reproduce against current Open States data, run scripts/run_pipeline.py with OPENSTATES_API_KEY and ANTHROPIC_API_KEY set."
+}

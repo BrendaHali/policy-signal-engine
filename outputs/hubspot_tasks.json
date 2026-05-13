@@ -1,0 +1,407 @@
+[
+  {
+    "task_id": "task_SB452_acc_011",
+    "owner_ae": "ae_lopez",
+    "account_id": "acc_011",
+    "account_name": "JPMorgan Chase",
+    "subject": "[Policy Signal] SB 452 (GA) \u2014 JPMorgan Chase",
+    "body": "1. Why now \u2014 Georgia signed Act 414 increasing the maximum 401(k) employer contribution for state law enforcement officers. 2. Why this account \u2014 JPMorgan Chase administers a meaningful share of public-sector defined contribution plans nationally and Georgia plan sponsors will need new contribution-cap logic by year-end. 3. Suggested open \u2014 Lead with the implementation timeline question and offer to walk through how peers are sequencing the change.",
+    "due_in_days": 2,
+    "score": 1.0,
+    "score_breakdown": {
+      "industry_match": 0.35,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.15
+    },
+    "bill": {
+      "id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+      "identifier": "SB 452",
+      "state": "GA",
+      "title": "Retirement and Pension; maximum employer contribution to a 401(k) for certain state law enforcement officers; increase",
+      "url": "https://openstates.org/ga/bills/2025_26/SB452/",
+      "urgency": 5,
+      "topic_summary": "Increases maximum 401(k) employer contribution for state law enforcement officers; signed (Act 414)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB1015_acc_001",
+    "owner_ae": "ae_lopez",
+    "account_id": "acc_001",
+    "account_name": "Aetna",
+    "subject": "[Policy Signal] HB 1015 (GA) \u2014 Aetna",
+    "body": "1. Why now \u2014 Georgia enacted Act 386 revising funded levels for the Self-insurers Guaranty Trust Fund. 2. Why this account \u2014 Aetna's stop-loss and self-insured book in Georgia is directly affected by the new fund-adequacy formula and will need disclosure language updates. 3. Suggested open \u2014 Reference the funded-level recalibration and ask which line of business they expect to feel it first.",
+    "due_in_days": 2,
+    "score": 0.985,
+    "score_breakdown": {
+      "industry_match": 0.4,
+      "urgency": 0.25,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.135
+    },
+    "bill": {
+      "id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+      "identifier": "HB 1015",
+      "state": "GA",
+      "title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+      "url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+      "urgency": 5,
+      "topic_summary": "Revises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB1015_acc_012",
+    "owner_ae": "ae_chen",
+    "account_id": "acc_012",
+    "account_name": "Bank of America",
+    "subject": "[Policy Signal] HB 1015 (GA) \u2014 Bank of America",
+    "body": "1. Why now \u2014 Act 386 changes Self-insurers Guaranty Trust Fund funded levels in Georgia. 2. Why this account \u2014 Bank of America's commercial banking clients with self-insured workers comp programs in Georgia face new assessment exposure. 3. Suggested open \u2014 Open with the timing of new assessments and offer the policy intel as a value-add for their commercial relationship managers.",
+    "due_in_days": 2,
+    "score": 0.985,
+    "score_breakdown": {
+      "industry_match": 0.35,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.135
+    },
+    "bill": {
+      "id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+      "identifier": "HB 1015",
+      "state": "GA",
+      "title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+      "url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+      "urgency": 5,
+      "topic_summary": "Revises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_SB452_acc_012",
+    "owner_ae": "ae_chen",
+    "account_id": "acc_012",
+    "account_name": "Bank of America",
+    "subject": "[Policy Signal] SB 452 (GA) \u2014 Bank of America",
+    "body": "1. Why now \u2014 Georgia Act 414 lifts the employer 401(k) contribution cap for state law enforcement. 2. Why this account \u2014 Bank of America is a top-five 401(k) recordkeeper in the public-employer segment and will need cap-rule updates pushed to plan administrators. 3. Suggested open \u2014 Ask which workstream owns Georgia public-plan compliance and offer a one-page summary.",
+    "due_in_days": 2,
+    "score": 0.985,
+    "score_breakdown": {
+      "industry_match": 0.35,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.135
+    },
+    "bill": {
+      "id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+      "identifier": "SB 452",
+      "state": "GA",
+      "title": "Retirement and Pension; maximum employer contribution to a 401(k) for certain state law enforcement officers; increase",
+      "url": "https://openstates.org/ga/bills/2025_26/SB452/",
+      "urgency": 5,
+      "topic_summary": "Increases maximum 401(k) employer contribution for state law enforcement officers; signed (Act 414)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB117_acc_031",
+    "owner_ae": "ae_lopez",
+    "account_id": "acc_031",
+    "account_name": "Walmart",
+    "subject": "[Policy Signal] HB 117 (GA) \u2014 Walmart",
+    "body": "1. Why now \u2014 Georgia signed Act 426 requiring country-of-origin notification for seafood at food service establishments. 2. Why this account \u2014 Walmart's Georgia store footprint and prepared-foods/grocery operations both need labeling and signage updates before the effective date. 3. Suggested open \u2014 Lead with the operational lift question across deli counters and packaged goods.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.3,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.25,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+      "identifier": "HB 117",
+      "state": "GA",
+      "title": "Food service establishments; require notification of the country of origin of seafood items",
+      "url": "https://openstates.org/ga/bills/2025_26/HB117/",
+      "urgency": 5,
+      "topic_summary": "Mandates country-of-origin notification for seafood at food service establishments; signed (Act 426)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB117_acc_038",
+    "owner_ae": "ae_patel",
+    "account_id": "acc_038",
+    "account_name": "Best Buy",
+    "subject": "[Policy Signal] HB 117 (GA) \u2014 Best Buy",
+    "body": "1. Why now \u2014 Georgia Act 426 mandates seafood country-of-origin notification at food service establishments. 2. Why this account \u2014 Best Buy's in-store food service operations in Georgia (cafe and vendor partnerships) fall under the requirement. 3. Suggested open \u2014 Ask whether this falls to facilities or merchandising and offer a multi-state rollup if other states follow.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.3,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.25,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+      "identifier": "HB 117",
+      "state": "GA",
+      "title": "Food service establishments; require notification of the country of origin of seafood items",
+      "url": "https://openstates.org/ga/bills/2025_26/HB117/",
+      "urgency": 5,
+      "topic_summary": "Mandates country-of-origin notification for seafood at food service establishments; signed (Act 426)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_SB162_acc_023",
+    "owner_ae": "ae_patel",
+    "account_id": "acc_023",
+    "account_name": "HCA Healthcare",
+    "subject": "[Policy Signal] SB 162 (GA) \u2014 HCA Healthcare",
+    "body": "1. Why now \u2014 Georgia signed Act 408 mandating an automated provider credentialing system through the Composite Medical Board. 2. Why this account \u2014 HCA Healthcare's Georgia hospital footprint runs on legacy credentialing workflows that will need to integrate with the state platform. 3. Suggested open \u2014 Open with the integration timeline and offer to share what other large systems are doing.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.4,
+      "urgency": 0.25,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+      "identifier": "SB 162",
+      "state": "GA",
+      "title": "Georgia Composite Medical Board; implement an automated credentialing system for healthcare providers in this state; provide",
+      "url": "https://openstates.org/ga/bills/2025_26/SB162/",
+      "urgency": 5,
+      "topic_summary": "Requires Composite Medical Board to implement automated provider credentialing system; signed (Act 408)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_SB162_acc_025",
+    "owner_ae": "ae_garcia",
+    "account_id": "acc_025",
+    "account_name": "Anthem (Elevance)",
+    "subject": "[Policy Signal] SB 162 (GA) \u2014 Anthem (Elevance)",
+    "body": "1. Why now \u2014 Georgia Act 408 requires automated credentialing through the Composite Medical Board. 2. Why this account \u2014 Anthem's Georgia provider network credentialing process intersects directly with the new state automation. 3. Suggested open \u2014 Lead with the impact on credentialing turnaround time and ask who owns the integration plan.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.4,
+      "urgency": 0.25,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+      "identifier": "SB 162",
+      "state": "GA",
+      "title": "Georgia Composite Medical Board; implement an automated credentialing system for healthcare providers in this state; provide",
+      "url": "https://openstates.org/ga/bills/2025_26/SB162/",
+      "urgency": 5,
+      "topic_summary": "Requires Composite Medical Board to implement automated provider credentialing system; signed (Act 408)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB1329_acc_023",
+    "owner_ae": "ae_patel",
+    "account_id": "acc_023",
+    "account_name": "HCA Healthcare",
+    "subject": "[Policy Signal] HB 1329 (GA) \u2014 HCA Healthcare",
+    "body": "1. Why now \u2014 Georgia signed Act 390 modifying Schedule I controlled substances provisions. 2. Why this account \u2014 HCA Georgia hospital pharmacies and ED protocols will need to update controlled substance policies and DEA reporting flows. 3. Suggested open \u2014 Ask which compliance lead owns Schedule I changes and offer a digest of the operational changes.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.4,
+      "urgency": 0.25,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+      "identifier": "HB 1329",
+      "state": "GA",
+      "title": "Controlled substances; Schedule I; provide certain provisions",
+      "url": "https://openstates.org/ga/bills/2025_26/HB1329/",
+      "urgency": 5,
+      "topic_summary": "Schedule I controlled substances provisions; signed (Act 390)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB1329_acc_025",
+    "owner_ae": "ae_garcia",
+    "account_id": "acc_025",
+    "account_name": "Anthem (Elevance)",
+    "subject": "[Policy Signal] HB 1329 (GA) \u2014 Anthem (Elevance)",
+    "body": "1. Why now \u2014 Georgia Act 390 updates Schedule I controlled substance regulations. 2. Why this account \u2014 Anthem's Georgia member care management programs and PA workflows for affected medications need to be updated. 3. Suggested open \u2014 Open with the medication-specific impact and offer a side-by-side of pre/post-Act formulary considerations.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.4,
+      "urgency": 0.25,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+      "identifier": "HB 1329",
+      "state": "GA",
+      "title": "Controlled substances; Schedule I; provide certain provisions",
+      "url": "https://openstates.org/ga/bills/2025_26/HB1329/",
+      "urgency": 5,
+      "topic_summary": "Schedule I controlled substances provisions; signed (Act 390)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB1015_acc_002",
+    "owner_ae": "ae_chen",
+    "account_id": "acc_002",
+    "account_name": "Allstate",
+    "subject": "[Policy Signal] HB 1015 (GA) \u2014 Allstate",
+    "body": "1. Why now \u2014 Georgia Act 386 changed Self-insurers Guaranty Trust Fund funded levels. 2. Why this account \u2014 Allstate's commercial auto and workers comp self-insurance retention strategies in Georgia are directly exposed to the new assessment math. 3. Suggested open \u2014 Lead with the assessment forecast and ask whether they're actively modeling the change.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.4,
+      "urgency": 0.25,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+      "identifier": "HB 1015",
+      "state": "GA",
+      "title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+      "url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+      "urgency": 5,
+      "topic_summary": "Revises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_HB1015_acc_019",
+    "owner_ae": "ae_williams",
+    "account_id": "acc_019",
+    "account_name": "PNC Bank",
+    "subject": "[Policy Signal] HB 1015 (GA) \u2014 PNC Bank",
+    "body": "1. Why now \u2014 Georgia Act 386 revises Self-insurers Guaranty Trust Fund funded levels. 2. Why this account \u2014 PNC Bank's commercial banking clients with self-insured plans in Georgia will need assessment guidance from their treasury teams. 3. Suggested open \u2014 Offer the policy summary as something PNC's commercial RMs can pass to clients proactively.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.35,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+      "identifier": "HB 1015",
+      "state": "GA",
+      "title": "Self-insurers Guaranty Trust Fund; revise certain funded levels",
+      "url": "https://openstates.org/ga/bills/2025_26/HB1015/",
+      "urgency": 5,
+      "topic_summary": "Revises funded levels of Self-insurers Guaranty Trust Fund; signed (Act 386)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_SB452_acc_019",
+    "owner_ae": "ae_williams",
+    "account_id": "acc_019",
+    "account_name": "PNC Bank",
+    "subject": "[Policy Signal] SB 452 (GA) \u2014 PNC Bank",
+    "body": "1. Why now \u2014 Act 414 raises the 401(k) employer contribution cap for Georgia state law enforcement. 2. Why this account \u2014 PNC's institutional retirement business serves Georgia public-sector plan sponsors who will need cap-rule updates applied. 3. Suggested open \u2014 Ask who at PNC owns Georgia public-plan rule maintenance and offer to share the implementation language.",
+    "due_in_days": 2,
+    "score": 0.955,
+    "score_breakdown": {
+      "industry_match": 0.35,
+      "urgency": 0.3,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.105
+    },
+    "bill": {
+      "id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+      "identifier": "SB 452",
+      "state": "GA",
+      "title": "Retirement and Pension; maximum employer contribution to a 401(k) for certain state law enforcement officers; increase",
+      "url": "https://openstates.org/ga/bills/2025_26/SB452/",
+      "urgency": 5,
+      "topic_summary": "Increases maximum 401(k) employer contribution for state law enforcement officers; signed (Act 414)."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_S7966_acc_034",
+    "owner_ae": "ae_williams",
+    "account_id": "acc_034",
+    "account_name": "Lowe's",
+    "subject": "[Policy Signal] S 7966 (NY) \u2014 Lowe's",
+    "body": "1. Why now \u2014 New York's S 7966 authorizing Atlantic Beach hotel/motel/beach club tax was placed on first calendar report and is moving fast. 2. Why this account \u2014 Lowe's NY commercial real estate footprint and any vendor-managed properties in coastal NY localities should track local tax authorizations. 3. Suggested open \u2014 Frame this as an early signal of local tax-authorization momentum across NY beach municipalities.",
+    "due_in_days": 2,
+    "score": 0.94,
+    "score_breakdown": {
+      "industry_match": 0.3,
+      "urgency": 0.24,
+      "state_footprint_overlap": 0.25,
+      "engagement": 0.15
+    },
+    "bill": {
+      "id": "ocd-bill/faed34e7-951d-408d-bafb-440367570229",
+      "identifier": "S 7966",
+      "state": "NY",
+      "title": "Authorizes the village of Atlantic Beach to impose a hotel, motel and beach club tax",
+      "url": "https://openstates.org/ny/bills/2025-2026/S7966/",
+      "urgency": 4,
+      "topic_summary": "Authorizes Atlantic Beach village hotel/motel/beach club tax; first report on calendar."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  },
+  {
+    "task_id": "task_SB938_acc_020",
+    "owner_ae": "ae_garcia",
+    "account_id": "acc_020",
+    "account_name": "American Express",
+    "subject": "[Policy Signal] SB 938 (MI) \u2014 American Express",
+    "body": "1. Why now \u2014 Michigan SB 938 establishes an income tax credit for sellers transferring mobile home parks to residents or cooperatives; referred to Committee of the Whole. 2. Why this account \u2014 American Express's small business card relationships with MI park operators may see refinancing demand if sellers move toward resident sales. 3. Suggested open \u2014 Open with the seller-financing angle and the affected portfolio segment in MI.",
+    "due_in_days": 2,
+    "score": 0.925,
+    "score_breakdown": {
+      "industry_match": 0.35,
+      "urgency": 0.24,
+      "state_footprint_overlap": 0.2,
+      "engagement": 0.135
+    },
+    "bill": {
+      "id": "ocd-bill/e2fe0ba1-c1cc-4750-a8ad-57b954529100",
+      "identifier": "SB 938",
+      "state": "MI",
+      "title": "Individual income tax: credit; credit for the sale of mobile home park or seasonal mobile home to residents or resident's association or cooperative; provide for. Amends 1967 PA 281 (MCL 206.1 - 206.847) by adding secs. 281 & 678.   TIE BAR WITH: SB 0937'26",
+      "url": "https://openstates.org/mi/bills/2025-2026/SB938/",
+      "urgency": 4,
+      "topic_summary": "Income tax credit for sale of mobile home park to residents or cooperative; referred to Committee of the Whole."
+    },
+    "drafted_by": "claude-opus-4-7",
+    "created_at": "2026-05-13T00:08:13+00:00"
+  }
+]

@@ -1,0 +1,662 @@
+[
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_034",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Engaged but no next step yet.",
+      "next_action": "Send the requested asset and propose a 15-min call.",
+      "from_reply_id": "reply_0000"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_021",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_027",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+    "bill_identifier": "HB 1329",
+    "account_id": "acc_021",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Engaged but no next step yet.",
+      "next_action": "Send the requested asset and propose a 15-min call.",
+      "from_reply_id": "reply_0003"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+    "bill_identifier": "HB 1329",
+    "account_id": "acc_027",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": "not_relevant",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect indicates no exposure.",
+      "next_action": "Mark account-vertical for suppression.",
+      "from_reply_id": "reply_0004"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_003",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_011",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Auto-reply (OOO).",
+      "next_action": "Re-touch in 1 week.",
+      "from_reply_id": "reply_0006"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_018",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": "opp_created",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect referenced active buying motion.",
+      "next_action": "Loop in CSM and tag opp in CRM.",
+      "from_reply_id": "reply_0007"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_018",
+    "score": 1.0,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_032",
+    "score": 0.985,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_024",
+    "score": 0.985,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Engaged but no next step yet.",
+      "next_action": "Send the requested asset and propose a 15-min call.",
+      "from_reply_id": "reply_0010"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+    "bill_identifier": "HB 1329",
+    "account_id": "acc_024",
+    "score": 0.985,
+    "action_taken": "slack_alert",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Auto-reply (OOO).",
+      "next_action": "Re-touch in 1 week.",
+      "from_reply_id": "reply_0011"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_020",
+    "score": 0.985,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_020",
+    "score": 0.985,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Engaged but no next step yet.",
+      "next_action": "Send the requested asset and propose a 15-min call.",
+      "from_reply_id": "reply_0013"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_035",
+    "score": 0.955,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_011",
+    "score": 1.0,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_001",
+    "score": 0.985,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_012",
+    "score": 0.985,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Auto-reply (OOO).",
+      "next_action": "Re-touch in 1 week.",
+      "from_reply_id": "reply_0017"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_012",
+    "score": 0.985,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_031",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Engaged but no next step yet.",
+      "next_action": "Send the requested asset and propose a 15-min call.",
+      "from_reply_id": "reply_0019"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_038",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_023",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": "opp_created",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect referenced active buying motion.",
+      "next_action": "Loop in CSM and tag opp in CRM.",
+      "from_reply_id": "reply_0021"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_025",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+    "bill_identifier": "HB 1329",
+    "account_id": "acc_023",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+    "bill_identifier": "HB 1329",
+    "account_id": "acc_025",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_002",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_019",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect proposed time or agreed to meet.",
+      "next_action": "Send calendar invite within 24h.",
+      "from_reply_id": "reply_0026"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_019",
+    "score": 0.955,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/faed34e7-951d-408d-bafb-440367570229",
+    "bill_identifier": "S 7966",
+    "account_id": "acc_034",
+    "score": 0.94,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Engaged but no next step yet.",
+      "next_action": "Send the requested asset and propose a 15-min call.",
+      "from_reply_id": "reply_0028"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/e2fe0ba1-c1cc-4750-a8ad-57b954529100",
+    "bill_identifier": "SB 938",
+    "account_id": "acc_020",
+    "score": 0.925,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Auto-reply (OOO).",
+      "next_action": "Re-touch in 1 week.",
+      "from_reply_id": "reply_0029"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_016",
+    "score": 0.955,
+    "action_taken": "sequence_enroll",
+    "outcome": "opp_created",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect referenced active buying motion.",
+      "next_action": "Loop in CSM and tag opp in CRM.",
+      "from_reply_id": "reply_0030"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_016",
+    "score": 0.955,
+    "action_taken": "sequence_enroll",
+    "outcome": "wrong_contact",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Reply names a different stakeholder.",
+      "next_action": "Ask for a warm intro to the named contact.",
+      "from_reply_id": "reply_0031"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/c2b486b0-e8e8-447d-a33c-ac00455a4da2",
+    "bill_identifier": "AB 1956",
+    "account_id": "acc_021",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/c2b486b0-e8e8-447d-a33c-ac00455a4da2",
+    "bill_identifier": "AB 1956",
+    "account_id": "acc_027",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect proposed time or agreed to meet.",
+      "next_action": "Send calendar invite within 24h.",
+      "from_reply_id": "reply_0033"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/e4c2a3be-532e-4088-94ac-85256f768eeb",
+    "bill_identifier": "HB 22",
+    "account_id": "acc_053",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/7ff6aaec-2d99-4497-9ade-0af7bdfefa5b",
+    "bill_identifier": "A 4018",
+    "account_id": "acc_021",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/7ff6aaec-2d99-4497-9ade-0af7bdfefa5b",
+    "bill_identifier": "A 4018",
+    "account_id": "acc_027",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/f383a72d-3904-4a1b-bddb-66f757084514",
+    "bill_identifier": "HB 1033",
+    "account_id": "acc_021",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/f383a72d-3904-4a1b-bddb-66f757084514",
+    "bill_identifier": "HB 1033",
+    "account_id": "acc_027",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/153cec6c-df83-4af3-9e44-e2885f035f05",
+    "bill_identifier": "HB 5644",
+    "account_id": "acc_027",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/fc4eb0c1-ac62-46b9-b13f-3ab35480e91e",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_033",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Auto-reply (OOO).",
+      "next_action": "Re-touch in 1 week.",
+      "from_reply_id": "reply_0040"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_022",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_029",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/0810e435-e28e-4e2d-ba0c-ab5d3adb5364",
+    "bill_identifier": "HB 1329",
+    "account_id": "acc_029",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_004",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Auto-reply (OOO).",
+      "next_action": "Re-touch in 1 week.",
+      "from_reply_id": "reply_0044"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_013",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/58c4f685-8784-48b7-8d0f-c8ec22d0d907",
+    "bill_identifier": "SB 452",
+    "account_id": "acc_013",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/a16e306d-5db0-43e0-a6ad-16eabddf835c",
+    "bill_identifier": "HB 117",
+    "account_id": "acc_034",
+    "score": 0.94,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/c2b486b0-e8e8-447d-a33c-ac00455a4da2",
+    "bill_identifier": "AB 1956",
+    "account_id": "acc_024",
+    "score": 0.935,
+    "action_taken": "sequence_enroll",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect proposed time or agreed to meet.",
+      "next_action": "Send calendar invite within 24h.",
+      "from_reply_id": "reply_0048"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/482bedf8-f921-4ccc-babd-c8ed80bc4e00",
+    "bill_identifier": "SB 162",
+    "account_id": "acc_028",
+    "score": 0.91,
+    "action_taken": "sequence_enroll",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Prospect proposed time or agreed to meet.",
+      "next_action": "Send calendar invite within 24h.",
+      "from_reply_id": "reply_0049"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_005",
+    "score": 0.91,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/6f3bb798-946d-4b0c-a5d9-0b0f881315c8",
+    "bill_identifier": "HB 1015",
+    "account_id": "acc_010",
+    "score": 0.91,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/c2b486b0-e8e8-447d-a33c-ac00455a4da2",
+    "bill_identifier": "AB 1956",
+    "account_id": "acc_025",
+    "score": 0.905,
+    "action_taken": "sequence_enroll",
+    "outcome": "objection",
+    "outcome_logged_at": "2026-05-13T02:15:18+00:00",
+    "enrichment": {
+      "rationale": "Explicit decline.",
+      "next_action": "Suppress for 90d, no follow-up.",
+      "from_reply_id": "reply_0052"
+    }
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/c2b486b0-e8e8-447d-a33c-ac00455a4da2",
+    "bill_identifier": "AB 1956",
+    "account_id": "acc_030",
+    "score": 0.905,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-13T00:08:13+00:00",
+    "bill_id": "ocd-bill/e4c2a3be-532e-4088-94ac-85256f768eeb",
+    "bill_identifier": "HB 22",
+    "account_id": "acc_060",
+    "score": 0.905,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  }
+]

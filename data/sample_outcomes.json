@@ -1,0 +1,1082 @@
+[
+  {
+    "timestamp": "2026-04-13T07:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0094",
+    "account_id": "acc_029",
+    "score": 0.659,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-13T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0079",
+    "account_id": "acc_058",
+    "score": 0.845,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-13T14:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-13T17:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0067",
+    "account_id": "acc_057",
+    "score": 0.961,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-13T17:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-13T22:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0041",
+    "account_id": "acc_004",
+    "score": 0.919,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-13T22:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-14T04:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0016",
+    "account_id": "acc_036",
+    "score": 0.698,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-14T04:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-14T06:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0036",
+    "account_id": "acc_027",
+    "score": 0.69,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-14T06:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-14T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0093",
+    "account_id": "acc_054",
+    "score": 0.866,
+    "action_taken": "sequence_enroll",
+    "outcome": "opp_created",
+    "outcome_logged_at": "2026-04-14T10:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-14T19:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0082",
+    "account_id": "acc_001",
+    "score": 0.711,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-14T19:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-14T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0090",
+    "account_id": "acc_045",
+    "score": 0.681,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-15T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0038",
+    "account_id": "acc_004",
+    "score": 0.842,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-15T01:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-15T05:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0030",
+    "account_id": "acc_047",
+    "score": 0.678,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-15T05:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-15T13:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0008",
+    "account_id": "acc_015",
+    "score": 0.861,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-15T13:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-15T22:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0088",
+    "account_id": "acc_046",
+    "score": 0.928,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-15T22:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-16T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0071",
+    "account_id": "acc_015",
+    "score": 0.904,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-17T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0085",
+    "account_id": "acc_041",
+    "score": 0.631,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-17T01:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-17T03:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0069",
+    "account_id": "acc_051",
+    "score": 0.9,
+    "action_taken": "sequence_enroll",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-04-17T03:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-17T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0045",
+    "account_id": "acc_051",
+    "score": 0.858,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-17T10:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-17T15:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0027",
+    "account_id": "acc_006",
+    "score": 0.689,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-17T15:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-17T23:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0117",
+    "account_id": "acc_033",
+    "score": 0.758,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-17T23:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-18T00:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0004",
+    "account_id": "acc_018",
+    "score": 0.659,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-18T00:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-18T04:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0022",
+    "account_id": "acc_001",
+    "score": 0.709,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-18T04:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-18T11:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0108",
+    "account_id": "acc_035",
+    "score": 0.63,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-18T11:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-18T15:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0009",
+    "account_id": "acc_025",
+    "score": 0.916,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-18T15:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0116",
+    "account_id": "acc_037",
+    "score": 0.822,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-18T15:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-19T00:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0110",
+    "account_id": "acc_010",
+    "score": 0.674,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-19T00:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-19T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0023",
+    "account_id": "acc_059",
+    "score": 0.785,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-19T01:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-19T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0078",
+    "account_id": "acc_043",
+    "score": 0.735,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-19T01:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-20T04:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0003",
+    "account_id": "acc_018",
+    "score": 0.755,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-20T04:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-20T11:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0077",
+    "account_id": "acc_047",
+    "score": 0.942,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-20T11:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-20T12:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0089",
+    "account_id": "acc_001",
+    "score": 0.69,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-20T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0052",
+    "account_id": "acc_020",
+    "score": 0.746,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-20T16:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0112",
+    "account_id": "acc_048",
+    "score": 0.662,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-20T18:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0031",
+    "account_id": "acc_024",
+    "score": 0.748,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-20T20:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0098",
+    "account_id": "acc_035",
+    "score": 0.624,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-20T20:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-20T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0070",
+    "account_id": "acc_013",
+    "score": 0.614,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-20T21:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-20T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0113",
+    "account_id": "acc_038",
+    "score": 0.661,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-20T21:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-21T06:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0051",
+    "account_id": "acc_043",
+    "score": 0.717,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-21T06:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-21T12:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0104",
+    "account_id": "acc_040",
+    "score": 0.911,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-21T16:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0011",
+    "account_id": "acc_041",
+    "score": 0.853,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-21T16:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-22T02:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0013",
+    "account_id": "acc_050",
+    "score": 0.853,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-22T07:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0042",
+    "account_id": "acc_055",
+    "score": 0.959,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-22T11:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0061",
+    "account_id": "acc_009",
+    "score": 0.616,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-22T11:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-22T11:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0106",
+    "account_id": "acc_025",
+    "score": 0.771,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-22T11:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-22T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0118",
+    "account_id": "acc_028",
+    "score": 0.755,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-22T14:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-22T16:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0062",
+    "account_id": "acc_036",
+    "score": 0.763,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-22T17:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0096",
+    "account_id": "acc_018",
+    "score": 0.629,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-22T17:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-22T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0000",
+    "account_id": "acc_048",
+    "score": 0.702,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-22T21:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-23T08:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0076",
+    "account_id": "acc_003",
+    "score": 0.933,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-23T08:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-23T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0026",
+    "account_id": "acc_054",
+    "score": 0.641,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-23T14:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-23T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0086",
+    "account_id": "acc_020",
+    "score": 0.952,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-23T14:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-24T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0047",
+    "account_id": "acc_038",
+    "score": 0.877,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-24T01:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-24T02:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0100",
+    "account_id": "acc_031",
+    "score": 0.926,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-24T02:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-24T07:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0033",
+    "account_id": "acc_041",
+    "score": 0.681,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-24T07:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-24T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0054",
+    "account_id": "acc_060",
+    "score": 0.679,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-24T21:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-25T02:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0056",
+    "account_id": "acc_034",
+    "score": 0.964,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-25T02:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-25T03:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0046",
+    "account_id": "acc_004",
+    "score": 0.657,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-25T03:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-25T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0040",
+    "account_id": "acc_056",
+    "score": 0.668,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-25T10:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-25T16:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0017",
+    "account_id": "acc_024",
+    "score": 0.759,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-25T16:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-25T20:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0081",
+    "account_id": "acc_048",
+    "score": 0.846,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-25T20:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-26T00:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0105",
+    "account_id": "acc_006",
+    "score": 0.819,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-26T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0091",
+    "account_id": "acc_030",
+    "score": 0.692,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-04-27T08:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0048",
+    "account_id": "acc_033",
+    "score": 0.797,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-27T08:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-27T17:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0103",
+    "account_id": "acc_043",
+    "score": 0.78,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-27T17:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-28T08:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0032",
+    "account_id": "acc_002",
+    "score": 0.692,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-28T08:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-28T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0084",
+    "account_id": "acc_058",
+    "score": 0.679,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-28T10:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-28T11:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0099",
+    "account_id": "acc_050",
+    "score": 0.908,
+    "action_taken": "hubspot_task",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-04-28T11:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-28T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0053",
+    "account_id": "acc_040",
+    "score": 0.946,
+    "action_taken": "slack_alert",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-28T14:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-29T07:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0102",
+    "account_id": "acc_015",
+    "score": 0.802,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-29T07:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-30T00:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0068",
+    "account_id": "acc_027",
+    "score": 0.942,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-04-30T00:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-30T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0039",
+    "account_id": "acc_013",
+    "score": 0.919,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-04-30T01:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-04-30T05:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0020",
+    "account_id": "acc_056",
+    "score": 0.796,
+    "action_taken": "slack_alert",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-01T04:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0119",
+    "account_id": "acc_012",
+    "score": 0.77,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-01T04:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-01T07:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0066",
+    "account_id": "acc_010",
+    "score": 0.75,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-01T07:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-01T13:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0006",
+    "account_id": "acc_035",
+    "score": 0.899,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-01T13:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-01T19:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0025",
+    "account_id": "acc_001",
+    "score": 0.888,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-01T19:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-01T22:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0055",
+    "account_id": "acc_054",
+    "score": 0.737,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-01T22:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-01T23:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0065",
+    "account_id": "acc_007",
+    "score": 0.678,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-01T23:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-02T14:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0097",
+    "account_id": "acc_025",
+    "score": 0.63,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-02T14:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-02T18:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0107",
+    "account_id": "acc_018",
+    "score": 0.725,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-03T00:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0074",
+    "account_id": "acc_017",
+    "score": 0.959,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-03T00:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-03T05:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0059",
+    "account_id": "acc_055",
+    "score": 0.727,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-03T08:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0080",
+    "account_id": "acc_019",
+    "score": 0.751,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-03T08:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-03T15:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0083",
+    "account_id": "acc_021",
+    "score": 0.891,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-03T15:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-04T08:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0060",
+    "account_id": "acc_006",
+    "score": 0.935,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-04T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0010",
+    "account_id": "acc_014",
+    "score": 0.735,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-04T10:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-04T13:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0073",
+    "account_id": "acc_035",
+    "score": 0.748,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-04T17:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0095",
+    "account_id": "acc_032",
+    "score": 0.703,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-05T16:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0035",
+    "account_id": "acc_060",
+    "score": 0.679,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-05T16:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-05T18:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0087",
+    "account_id": "acc_040",
+    "score": 0.617,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-05T19:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0043",
+    "account_id": "acc_058",
+    "score": 0.778,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-05T20:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0018",
+    "account_id": "acc_008",
+    "score": 0.634,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-05T20:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-05T20:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0111",
+    "account_id": "acc_030",
+    "score": 0.642,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-06T06:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0015",
+    "account_id": "acc_026",
+    "score": 0.716,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-06T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0037",
+    "account_id": "acc_030",
+    "score": 0.759,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-06T21:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-06T22:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0115",
+    "account_id": "acc_045",
+    "score": 0.907,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-06T22:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-07T07:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0012",
+    "account_id": "acc_060",
+    "score": 0.66,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-07T07:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-08T04:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0019",
+    "account_id": "acc_025",
+    "score": 0.852,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-08T04:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-08T10:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0092",
+    "account_id": "acc_049",
+    "score": 0.966,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-08T10:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-08T16:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0058",
+    "account_id": "acc_018",
+    "score": 0.64,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-08T16:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-08T18:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0005",
+    "account_id": "acc_007",
+    "score": 0.725,
+    "action_taken": "slack_alert",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-08T18:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-08T20:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0029",
+    "account_id": "acc_034",
+    "score": 0.95,
+    "action_taken": "sequence_enroll",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-08T20:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-09T03:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0001",
+    "account_id": "acc_003",
+    "score": 0.802,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-09T03:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-09T04:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0024",
+    "account_id": "acc_010",
+    "score": 0.836,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-09T04:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-09T06:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0050",
+    "account_id": "acc_027",
+    "score": 0.82,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-09T06:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-09T12:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0007",
+    "account_id": "acc_057",
+    "score": 0.708,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-10T01:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0028",
+    "account_id": "acc_050",
+    "score": 0.626,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-10T19:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0049",
+    "account_id": "acc_026",
+    "score": 0.625,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-11T13:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0064",
+    "account_id": "acc_020",
+    "score": 0.655,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-11T13:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-11T13:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0109",
+    "account_id": "acc_003",
+    "score": 0.625,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-11T17:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0014",
+    "account_id": "acc_005",
+    "score": 0.898,
+    "action_taken": "sequence_enroll",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-11T17:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-11T17:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0034",
+    "account_id": "acc_033",
+    "score": 0.612,
+    "action_taken": "hubspot_task",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-11T17:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-11T19:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0044",
+    "account_id": "acc_051",
+    "score": 0.965,
+    "action_taken": "hubspot_task",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-11T19:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-11T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0075",
+    "account_id": "acc_028",
+    "score": 0.728,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-12T03:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0021",
+    "account_id": "acc_018",
+    "score": 0.852,
+    "action_taken": "sequence_enroll",
+    "outcome": "no_response",
+    "outcome_logged_at": "2026-05-12T03:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-12T03:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0057",
+    "account_id": "acc_057",
+    "score": 0.711,
+    "action_taken": "sequence_enroll",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-12T03:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0072",
+    "account_id": "acc_050",
+    "score": 0.721,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-12T13:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0101",
+    "account_id": "acc_054",
+    "score": 0.744,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-12T15:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0114",
+    "account_id": "acc_046",
+    "score": 0.936,
+    "action_taken": "sequence_enroll",
+    "outcome": "meeting_booked",
+    "outcome_logged_at": "2026-05-12T15:09:06+00:00"
+  },
+  {
+    "timestamp": "2026-05-12T21:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0063",
+    "account_id": "acc_035",
+    "score": 0.927,
+    "action_taken": "hubspot_task",
+    "outcome": null,
+    "outcome_logged_at": null
+  },
+  {
+    "timestamp": "2026-05-12T22:09:06+00:00",
+    "bill_id": "ocd-bill/sample-0002",
+    "account_id": "acc_013",
+    "score": 0.787,
+    "action_taken": "hubspot_task",
+    "outcome": "replied",
+    "outcome_logged_at": "2026-05-12T22:09:06+00:00"
+  }
+]

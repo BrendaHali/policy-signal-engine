@@ -1,0 +1,107 @@
+# Scoring config — vertical-specific weights and topic relevance.
+# A bill x account pair gets a weighted 0-1 score.
+# Weights must sum to 1.0 per vertical.
+# urgency_floor filters out low-urgency bills before routing.
+
+verticals:
+  insurance:
+    weights:
+      industry_match: 0.40
+      urgency: 0.25
+      state_footprint_overlap: 0.20
+      engagement: 0.15
+    relevant_topics:
+      - "health insurance"
+      - "auto insurance"
+      - "property insurance"
+      - "data privacy"
+      - "consumer protection"
+      - "rate regulation"
+      - "claims handling"
+    urgency_floor: 3
+
+  financial_services:
+    weights:
+      industry_match: 0.35
+      urgency: 0.30
+      state_footprint_overlap: 0.20
+      engagement: 0.15
+    relevant_topics:
+      - "banking"
+      - "consumer credit"
+      - "data privacy"
+      - "interchange fees"
+      - "lending"
+      - "money transmission"
+      - "AML/KYC"
+    urgency_floor: 3
+
+  healthcare:
+    weights:
+      industry_match: 0.40
+      urgency: 0.25
+      state_footprint_overlap: 0.20
+      engagement: 0.15
+    relevant_topics:
+      - "Medicaid"
+      - "prescription drugs"
+      - "PBM regulation"
+      - "hospital pricing"
+      - "telehealth"
+      - "patient privacy"
+      - "scope of practice"
+    urgency_floor: 3
+
+  retail:
+    weights:
+      industry_match: 0.30
+      urgency: 0.30
+      state_footprint_overlap: 0.25
+      engagement: 0.15
+    relevant_topics:
+      - "sales tax"
+      - "labor law"
+      - "minimum wage"
+      - "product liability"
+      - "data privacy"
+      - "packaging mandates"
+      - "extended producer responsibility"
+    urgency_floor: 3
+
+  energy:
+    weights:
+      industry_match: 0.35
+      urgency: 0.30
+      state_footprint_overlap: 0.20
+      engagement: 0.15
+    relevant_topics:
+      - "renewable portfolio standards"
+      - "grid reliability"
+      - "rate cases"
+      - "permitting reform"
+      - "emissions"
+      - "transmission siting"
+      - "net metering"
+    urgency_floor: 3
+
+  telecom:
+    weights:
+      industry_match: 0.35
+      urgency: 0.25
+      state_footprint_overlap: 0.25
+      engagement: 0.15
+    relevant_topics:
+      - "broadband deployment"
+      - "right-of-way"
+      - "pole attachments"
+      - "data privacy"
+      - "5G siting"
+      - "universal service"
+      - "consumer protection"
+    urgency_floor: 3
+
+# How each weighted factor is computed (0-1 normalized):
+# - industry_match: 1.0 if any classified industry == account.industry, else 0.4 if adjacent (e.g., insurance <-> financial_services), else 0
+# - urgency: classification.urgency / 5
+# - state_footprint_overlap: 1.0 if bill.state in account.state_footprint, else 0
+# - engagement: prospect-hot=1.0, customer-renewal=0.9, prospect-warm=0.7, customer-active=0.6, prospect-cold=0.4, churned-recent=0.2

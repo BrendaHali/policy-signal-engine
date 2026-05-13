@@ -1,0 +1,192 @@
+[
+  {
+    "task_id": "task_SB452_acc_011",
+    "account_name": "JPMorgan Chase",
+    "bill_identifier": "SB 452",
+    "score": 1.0,
+    "researched_at": "2026-05-13T02:14:14+00:00",
+    "briefing": {
+      "exposure_summary": "JPMorgan Chase's financial_services operations in GA are directly exposed to the new statutory requirement covering increases maximum 401(k) employer contribution for state law enforcement officers; signed (act 414). The bill is moving and will hit the operational clock if it advances.",
+      "evidence": [
+        {
+          "claim": "Account operates in GA, the bill's jurisdiction.",
+          "source": "data/accounts.json"
+        },
+        {
+          "claim": "Account industry (financial_services) overlaps the bill's classified industries ().",
+          "source": "outputs/classified_bills.json"
+        },
+        {
+          "claim": "Bill latest action: see bill.url on 2026-05-13.",
+          "source": "https://openstates.org/ga/bills/2025_26/SB452/"
+        }
+      ],
+      "competitor_lens": "Live mode required for competitor positioning research; stub returned in dry-run.",
+      "talking_points": [
+        "The SB 452 change creates a near-term operational requirement for JPMorgan Chase's GA footprint.",
+        "Other financial_services accounts with similar exposure are evaluating compliance paths now.",
+        "Worth a 15-minute conversation with the team owning financial_services regulatory ops at JPMorgan Chase."
+      ],
+      "confidence": "low",
+      "confidence_rationale": "Bill is in motion but not yet enacted; exposure is contingent on advancement."
+    },
+    "agent_trace": [
+      {
+        "mode": "dry-run",
+        "tool_calls": 0
+      }
+    ]
+  },
+  {
+    "task_id": "task_HB1015_acc_001",
+    "account_name": "Aetna",
+    "bill_identifier": "HB 1015",
+    "score": 0.985,
+    "researched_at": "2026-05-13T02:14:14+00:00",
+    "briefing": {
+      "exposure_summary": "Aetna's insurance operations in GA are directly exposed to the new statutory requirement covering revises funded levels of self-insurers guaranty trust fund; signed (act 386). The bill is moving and will hit the operational clock if it advances.",
+      "evidence": [
+        {
+          "claim": "Account operates in GA, the bill's jurisdiction.",
+          "source": "data/accounts.json"
+        },
+        {
+          "claim": "Account industry (insurance) overlaps the bill's classified industries ().",
+          "source": "outputs/classified_bills.json"
+        },
+        {
+          "claim": "Bill latest action: see bill.url on 2026-05-13.",
+          "source": "https://openstates.org/ga/bills/2025_26/HB1015/"
+        }
+      ],
+      "competitor_lens": "Live mode required for competitor positioning research; stub returned in dry-run.",
+      "talking_points": [
+        "The HB 1015 change creates a near-term operational requirement for Aetna's GA footprint.",
+        "Other insurance accounts with similar exposure are evaluating compliance paths now.",
+        "Worth a 15-minute conversation with the team owning insurance regulatory ops at Aetna."
+      ],
+      "confidence": "low",
+      "confidence_rationale": "Bill is in motion but not yet enacted; exposure is contingent on advancement."
+    },
+    "agent_trace": [
+      {
+        "mode": "dry-run",
+        "tool_calls": 0
+      }
+    ]
+  },
+  {
+    "task_id": "task_HB1015_acc_012",
+    "account_name": "Bank of America",
+    "bill_identifier": "HB 1015",
+    "score": 0.985,
+    "researched_at": "2026-05-13T02:14:14+00:00",
+    "briefing": {
+      "exposure_summary": "Bank of America's financial_services operations in GA are directly exposed to the new statutory requirement covering revises funded levels of self-insurers guaranty trust fund; signed (act 386). The bill is moving and will hit the operational clock if it advances.",
+      "evidence": [
+        {
+          "claim": "Account operates in GA, the bill's jurisdiction.",
+          "source": "data/accounts.json"
+        },
+        {
+          "claim": "Account industry (financial_services) overlaps the bill's classified industries ().",
+          "source": "outputs/classified_bills.json"
+        },
+        {
+          "claim": "Bill latest action: see bill.url on 2026-05-13.",
+          "source": "https://openstates.org/ga/bills/2025_26/HB1015/"
+        }
+      ],
+      "competitor_lens": "Live mode required for competitor positioning research; stub returned in dry-run.",
+      "talking_points": [
+        "The HB 1015 change creates a near-term operational requirement for Bank of America's GA footprint.",
+        "Other financial_services accounts with similar exposure are evaluating compliance paths now.",
+        "Worth a 15-minute conversation with the team owning financial_services regulatory ops at Bank of America."
+      ],
+      "confidence": "low",
+      "confidence_rationale": "Bill is in motion but not yet enacted; exposure is contingent on advancement."
+    },
+    "agent_trace": [
+      {
+        "mode": "dry-run",
+        "tool_calls": 0
+      }
+    ]
+  },
+  {
+    "task_id": "task_SB452_acc_012",
+    "account_name": "Bank of America",
+    "bill_identifier": "SB 452",
+    "score": 0.985,
+    "researched_at": "2026-05-13T02:14:14+00:00",
+    "briefing": {
+      "exposure_summary": "Bank of America's financial_services operations in GA are directly exposed to the new statutory requirement covering increases maximum 401(k) employer contribution for state law enforcement officers; signed (act 414). The bill is moving and will hit the operational clock if it advances.",
+      "evidence": [
+        {
+          "claim": "Account operates in GA, the bill's jurisdiction.",
+          "source": "data/accounts.json"
+        },
+        {
+          "claim": "Account industry (financial_services) overlaps the bill's classified industries ().",
+          "source": "outputs/classified_bills.json"
+        },
+        {
+          "claim": "Bill latest action: see bill.url on 2026-05-13.",
+          "source": "https://openstates.org/ga/bills/2025_26/SB452/"
+        }
+      ],
+      "competitor_lens": "Live mode required for competitor positioning research; stub returned in dry-run.",
+      "talking_points": [
+        "The SB 452 change creates a near-term operational requirement for Bank of America's GA footprint.",
+        "Other financial_services accounts with similar exposure are evaluating compliance paths now.",
+        "Worth a 15-minute conversation with the team owning financial_services regulatory ops at Bank of America."
+      ],
+      "confidence": "low",
+      "confidence_rationale": "Bill is in motion but not yet enacted; exposure is contingent on advancement."
+    },
+    "agent_trace": [
+      {
+        "mode": "dry-run",
+        "tool_calls": 0
+      }
+    ]
+  },
+  {
+    "task_id": "task_HB117_acc_031",
+    "account_name": "Walmart",
+    "bill_identifier": "HB 117",
+    "score": 0.955,
+    "researched_at": "2026-05-13T02:14:14+00:00",
+    "briefing": {
+      "exposure_summary": "Walmart's retail operations in GA are directly exposed to the new statutory requirement covering mandates country-of-origin notification for seafood at food service establishments; signed (act 426). The bill is moving and will hit the operational clock if it advances.",
+      "evidence": [
+        {
+          "claim": "Account operates in GA, the bill's jurisdiction.",
+          "source": "data/accounts.json"
+        },
+        {
+          "claim": "Account industry (retail) overlaps the bill's classified industries ().",
+          "source": "outputs/classified_bills.json"
+        },
+        {
+          "claim": "Bill latest action: see bill.url on 2026-05-13.",
+          "source": "https://openstates.org/ga/bills/2025_26/HB117/"
+        }
+      ],
+      "competitor_lens": "Live mode required for competitor positioning research; stub returned in dry-run.",
+      "talking_points": [
+        "The HB 117 change creates a near-term operational requirement for Walmart's GA footprint.",
+        "Other retail accounts with similar exposure are evaluating compliance paths now.",
+        "Worth a 15-minute conversation with the team owning retail regulatory ops at Walmart."
+      ],
+      "confidence": "low",
+      "confidence_rationale": "Bill is in motion but not yet enacted; exposure is contingent on advancement."
+    },
+    "agent_trace": [
+      {
+        "mode": "dry-run",
+        "tool_calls": 0
+      }
+    ]
+  }
+]

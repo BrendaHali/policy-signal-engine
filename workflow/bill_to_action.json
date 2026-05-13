@@ -1,0 +1,278 @@
+{
+  "name": "Bill to Action — Daily Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 8 * * *" }
+          ]
+        }
+      },
+      "id": "node_cron",
+      "name": "Daily 08:00 UTC",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "=https://v3.openstates.org/bills",
+        "method": "GET",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "jurisdiction", "value": "ca" },
+            { "name": "sort", "value": "updated_desc" },
+            { "name": "updated_since", "value": "={{ $today.minus({ days: 1 }).toISO() }}" },
+            { "name": "per_page", "value": "50" }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "X-API-KEY", "value": "={{ $env.OPENSTATES_API_KEY }}" }
+          ]
+        },
+        "options": { "timeout": 30000 }
+      },
+      "id": "node_fetch",
+      "name": "Fetch Open States",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Flatten the Open States response and keep the fields we need.\nconst items = $input.first().json.results || [];\nreturn items.map(b => ({\n  json: {\n    id: b.id,\n    state: (b.jurisdiction?.name || '').toLowerCase().slice(0, 2),\n    session: b.session,\n    identifier: b.identifier,\n    title: (b.title || '').slice(0, 500),\n    latest_action_date: b.latest_action_date,\n    latest_action: b.latest_action_description,\n    subjects: b.subjects || [],\n    url: b.openstates_url,\n  }\n}));"
+      },
+      "id": "node_normalize",
+      "name": "Normalize Bills",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "node_loop",
+      "name": "Loop Over Bills",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.anthropic.com/v1/messages",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "={{ $env.ANTHROPIC_API_KEY }}" },
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"model\": \"claude-sonnet-4-6\",\n  \"max_tokens\": 400,\n  \"system\": \"You are a policy analyst classifying state legislation for a B2B GTM team. Return strict JSON only — no preamble, no commentary, no markdown fences.\",\n  \"messages\": [{\n    \"role\": \"user\",\n    \"content\": \"Bill: \" + $json.identifier + \" — \" + $json.title + \"\\nState: \" + $json.state + \"\\nSubjects: \" + ($json.subjects || []).join(', ') + \"\\nLatest action (\" + $json.latest_action_date + \"): \" + $json.latest_action + \"\\n\\nClassify. Return JSON with exactly these fields:\\n\\nindustries: array of tags from [healthcare, insurance, financial_services, tech, retail, food_service, energy, manufacturing, transportation, education, agriculture, telecom, real_estate, advocacy_seniors, advocacy_consumer]\\nurgency: integer 1-5 (5=floor vote/signing imminent, 4=committee action this week, 3=active in committee, 2=introduced, 1=dormant)\\ntopic_summary: one sentence, max 25 words.\\naffected_entities: array of 2-4 short phrases.\"\n  }]\n}",
+        "options": { "timeout": 30000 }
+      },
+      "id": "node_classify",
+      "name": "Claude Classify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge Claude's classification onto the bill record.\nconst bill = $('Loop Over Bills').item.json;\nconst resp = $input.first().json;\nconst text = resp?.content?.[0]?.text || '{}';\nlet classification;\ntry { classification = JSON.parse(text); } catch (e) { classification = null; }\nreturn [{ json: { ...bill, classification } }];"
+      },
+      "id": "node_merge_classification",
+      "name": "Merge Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/BrendaHali/policy-signal-engine/main/data/accounts.json",
+        "method": "GET",
+        "options": { "timeout": 15000 }
+      },
+      "id": "node_load_accounts",
+      "name": "Fetch Accounts (raw GitHub)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1560, 240]
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/BrendaHali/policy-signal-engine/main/data/scoring_config.yaml",
+        "method": "GET",
+        "options": { "timeout": 15000, "response": { "response": { "responseFormat": "text" } } }
+      },
+      "id": "node_load_config",
+      "name": "Fetch Scoring Config (raw GitHub)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1560, 360]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Combine the two HTTP responses into one record for downstream nodes.\nconst accounts = $('Fetch Accounts (raw GitHub)').first().json;\nconst yamlText = $('Fetch Scoring Config (raw GitHub)').first().json.data || $('Fetch Scoring Config (raw GitHub)').first().json;\n// minimal YAML parse via JSON conversion would need a library; in n8n use the YAML node or pre-convert.\n// For demo simplicity, the scoring config is also published as JSON at the same path with .json extension.\nconst yaml = require('js-yaml');\nconst cfg = typeof yamlText === 'string' ? yaml.load(yamlText) : yamlText;\nreturn [{ json: { accounts, cfg } }];"
+      },
+      "id": "node_combine_config",
+      "name": "Combine Accounts + Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// For each bill, score against every account that gates pass: industry overlap (direct or adjacent) AND state in footprint.\nconst ENGAGEMENT = { 'prospect-hot': 1.0, 'customer-renewal': 0.9, 'prospect-warm': 0.7, 'customer-active': 0.6, 'prospect-cold': 0.4, 'churned-recent': 0.2 };\nconst ADJACENT = { insurance: ['financial_services','healthcare'], financial_services: ['insurance'], healthcare: ['insurance'], retail: ['food_service'], energy: ['manufacturing'], telecom: ['tech'] };\n\nconst bill = $('Merge Classification').item.json;\nconst { accounts, cfg } = $('Combine Accounts + Config').item.json;\nconst cls = bill.classification;\nif (!cls?.industries?.length) return [];\nconst industries = new Set(cls.industries);\n\nconst out = [];\nfor (const a of accounts) {\n  const direct = industries.has(a.industry);\n  const adj = (ADJACENT[a.industry] || []).some(i => industries.has(i));\n  if (!direct && !adj) continue;\n  if (!a.state_footprint.includes(bill.state)) continue;\n  const v = cfg.verticals[a.vertical_config];\n  if (!v) continue;\n  const w = v.weights;\n  const breakdown = {\n    industry_match: (direct ? 1.0 : 0.4) * w.industry_match,\n    urgency: ((cls.urgency || 1) / 5) * w.urgency,\n    state_footprint_overlap: 1.0 * w.state_footprint_overlap,\n    engagement: (ENGAGEMENT[a.engagement_status] || 0.4) * w.engagement,\n  };\n  const score = +(breakdown.industry_match + breakdown.urgency + breakdown.state_footprint_overlap + breakdown.engagement).toFixed(4);\n  if (score >= 0.6 && (cls.urgency || 0) >= v.urgency_floor) {\n    out.push({ json: { bill, account: a, score, breakdown } });\n  }\n}\nreturn out;"
+      },
+      "id": "node_score",
+      "name": "Match & Score",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1780, 300]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            { "conditions": { "options": { "caseSensitive": true, "typeValidation": "strict" }, "conditions": [{ "leftValue": "={{ $json.bill.classification.urgency }}", "rightValue": 5, "operator": { "type": "number", "operation": "equals" } }] }, "outputKey": "urgent" },
+            { "conditions": { "options": { "caseSensitive": true, "typeValidation": "strict" }, "conditions": [{ "leftValue": "={{ $json.score }}", "rightValue": 0.8, "operator": { "type": "number", "operation": "gte" } }, { "leftValue": "={{ $json.account.tier }}", "rightValue": 2, "operator": { "type": "number", "operation": "lte" } }] }, "outputKey": "top_tier" },
+            { "conditions": { "options": {}, "conditions": [{ "leftValue": "={{ $json.score }}", "rightValue": 0.6, "operator": { "type": "number", "operation": "gte" } }] }, "outputKey": "bulk" }
+          ]
+        },
+        "options": { "fallbackOutput": "none" }
+      },
+      "id": "node_router",
+      "name": "Router",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [2000, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.anthropic.com/v1/messages",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": { "parameters": [
+          { "name": "x-api-key", "value": "={{ $env.ANTHROPIC_API_KEY }}" },
+          { "name": "anthropic-version", "value": "2023-06-01" },
+          { "name": "content-type", "value": "application/json" }
+        ]},
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"model\": \"claude-opus-4-7\",\n  \"max_tokens\": 300,\n  \"system\": \"You are drafting a sales briefing for a state policy intelligence platform's GTM team. Tone: confident, factual, no hype, no exclamation. Output the briefing only — no preamble, no signature.\",\n  \"messages\": [{\n    \"role\": \"user\",\n    \"content\": \"Account: \" + $json.account.name + \" (\" + $json.account.industry + \")\\nAccount state footprint: \" + $json.account.state_footprint.join(', ') + \"\\nBill: \" + $json.bill.identifier + \" — \" + $json.bill.title + \" (\" + $json.bill.state.toUpperCase() + \")\\nTopic: \" + $json.bill.classification.topic_summary + \"\\nUrgency: \" + $json.bill.classification.urgency + \"/5\\nLatest action: \" + $json.bill.latest_action + \" on \" + $json.bill.latest_action_date + \"\\n\\nWrite a 3-part briefing for the AE:\\n1. Why now — one sentence on the trigger.\\n2. Why this account — one sentence on the specific exposure.\\n3. Suggested open — one sentence the AE could lead with.\\n\\nTotal length under 80 words.\"\n  }]\n}",
+        "options": { "timeout": 30000 }
+      },
+      "id": "node_draft_top",
+      "name": "Claude Draft (Opus)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2240, 180]
+    },
+    {
+      "parameters": {
+        "url": "https://api.anthropic.com/v1/messages",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": { "parameters": [
+          { "name": "x-api-key", "value": "={{ $env.ANTHROPIC_API_KEY }}" },
+          { "name": "anthropic-version", "value": "2023-06-01" },
+          { "name": "content-type", "value": "application/json" }
+        ]},
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"model\": \"claude-sonnet-4-6\",\n  \"max_tokens\": 250,\n  \"system\": \"You are drafting a sales briefing for a state policy intelligence platform's GTM team. Tone: confident, factual, brief. Output the briefing only.\",\n  \"messages\": [{\n    \"role\": \"user\",\n    \"content\": \"Account: \" + $json.account.name + \" (\" + $json.account.industry + \")\\nBill: \" + $json.bill.identifier + \" (\" + $json.bill.state.toUpperCase() + \") — \" + $json.bill.classification.topic_summary + \"\\nUrgency: \" + $json.bill.classification.urgency + \"/5\\n\\nWrite a 3-part briefing under 60 words: why now, why this account, suggested open.\"\n  }]\n}",
+        "options": { "timeout": 30000 }
+      },
+      "id": "node_draft_bulk",
+      "name": "Claude Draft (Sonnet, brief)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2240, 380]
+    },
+    {
+      "parameters": {
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
+        "method": "POST",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "jsonBody": "={\n  \"text\": \":rotating_light: URGENT — \" + $json.account.name + \" exposed: \" + $json.bill.identifier + \" (\" + $json.bill.state.toUpperCase() + \") at urgency 5\",\n  \"blocks\": [\n    {\"type\": \"header\", \"text\": {\"type\": \"plain_text\", \"text\": \":rotating_light: Urgent policy signal — \" + $json.account.name}},\n    {\"type\": \"section\", \"text\": {\"type\": \"mrkdwn\", \"text\": \"*\" + $json.bill.identifier + \" (\" + $json.bill.state.toUpperCase() + \")*\\n\" + $json.bill.classification.topic_summary + \"\\n*Latest action:* \" + $json.bill.latest_action}},\n    {\"type\": \"section\", \"text\": {\"type\": \"mrkdwn\", \"text\": \"*Owner:* \" + $json.account.owner_ae + \" • *Score:* \" + $json.score + \" • <\" + $json.bill.url + \"|Open bill>\"}}\n  ]\n}"
+      },
+      "id": "node_slack",
+      "name": "Slack Alert",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2240, 580]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Append to outputs/hubspot_tasks.json. In real deploy, swap for HubSpot CRM API.\nconst fs = require('fs');\nconst path = require('path');\nconst REPO = $env.PIPELINE_REPO_PATH || '/data/policy-signal-engine';\nconst file = path.join(REPO, 'outputs/hubspot_tasks.json');\nconst existing = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : [];\nconst m = $('Router').item.json;\nconst draft = $input.first().json?.content?.[0]?.text || '';\nconst task = {\n  task_id: 'task_' + m.bill.identifier.replace(/\\s+/g,'') + '_' + m.account.id,\n  owner_ae: m.account.owner_ae,\n  account_id: m.account.id,\n  account_name: m.account.name,\n  subject: '[Policy Signal] ' + m.bill.identifier + ' (' + m.bill.state.toUpperCase() + ') — ' + m.account.name,\n  body: draft,\n  due_in_days: 2,\n  score: m.score,\n  drafted_by: 'claude-opus-4-7',\n  created_at: new Date().toISOString(),\n};\nfs.writeFileSync(file, JSON.stringify([...existing, task], null, 2));\nreturn [{ json: task }];"
+      },
+      "id": "node_write_hubspot",
+      "name": "Write HubSpot Task",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2460, 180]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Append to outputs/sequences.json.\nconst fs = require('fs');\nconst path = require('path');\nconst REPO = $env.PIPELINE_REPO_PATH || '/data/policy-signal-engine';\nconst file = path.join(REPO, 'outputs/sequences.json');\nconst existing = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : [];\nconst m = $('Router').item.json;\nconst draft = $input.first().json?.content?.[0]?.text || '';\nconst step = {\n  sequence_id: 'seq_' + m.account.vertical_config + '_weekly',\n  step: 'policy_signal_touch',\n  account_id: m.account.id,\n  account_name: m.account.name,\n  owner_ae: m.account.owner_ae,\n  subject_line: m.bill.identifier + ' just moved in ' + m.bill.state.toUpperCase() + ' — relevant to ' + m.account.name + '?',\n  body: draft,\n  score: m.score,\n  drafted_by: 'claude-sonnet-4-6',\n  queued_at: new Date().toISOString(),\n};\nfs.writeFileSync(file, JSON.stringify([...existing, step], null, 2));\nreturn [{ json: step }];"
+      },
+      "id": "node_write_sequence",
+      "name": "Write Sequence Step",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2460, 380]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Append to data/outcomes.json. One row per routed pair, outcome null until later enrichment.\nconst fs = require('fs');\nconst path = require('path');\nconst REPO = $env.PIPELINE_REPO_PATH || '/data/policy-signal-engine';\nconst file = path.join(REPO, 'data/outcomes.json');\nconst existing = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : [];\nconst m = $('Router').item.json;\nconst urgency = m.bill.classification.urgency;\nconst action = urgency === 5 ? 'slack_alert' : (m.score >= 0.8 && m.account.tier <= 2 ? 'hubspot_task' : 'sequence_enroll');\nconst entry = {\n  timestamp: new Date().toISOString(),\n  bill_id: m.bill.id,\n  bill_identifier: m.bill.identifier,\n  account_id: m.account.id,\n  score: m.score,\n  action_taken: action,\n  outcome: null,\n  outcome_logged_at: null,\n};\nfs.writeFileSync(file, JSON.stringify([...existing, entry], null, 2));\nreturn [{ json: entry }];"
+      },
+      "id": "node_log_outcome",
+      "name": "Log Outcome",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2700, 300]
+    }
+  ],
+  "connections": {
+    "Daily 08:00 UTC": { "main": [[{ "node": "Fetch Open States", "type": "main", "index": 0 }]] },
+    "Fetch Open States": { "main": [[{ "node": "Normalize Bills", "type": "main", "index": 0 }]] },
+    "Normalize Bills": { "main": [[{ "node": "Loop Over Bills", "type": "main", "index": 0 }]] },
+    "Loop Over Bills": { "main": [[{ "node": "Claude Classify", "type": "main", "index": 0 }]] },
+    "Claude Classify": { "main": [[{ "node": "Merge Classification", "type": "main", "index": 0 }]] },
+    "Merge Classification": { "main": [[{ "node": "Fetch Accounts (raw GitHub)", "type": "main", "index": 0 }]] },
+    "Fetch Accounts (raw GitHub)": { "main": [[{ "node": "Fetch Scoring Config (raw GitHub)", "type": "main", "index": 0 }]] },
+    "Fetch Scoring Config (raw GitHub)": { "main": [[{ "node": "Combine Accounts + Config", "type": "main", "index": 0 }]] },
+    "Combine Accounts + Config": { "main": [[{ "node": "Match & Score", "type": "main", "index": 0 }]] },
+    "Match & Score": { "main": [[{ "node": "Router", "type": "main", "index": 0 }]] },
+    "Router": {
+      "main": [
+        [{ "node": "Slack Alert", "type": "main", "index": 0 }],
+        [{ "node": "Claude Draft (Opus)", "type": "main", "index": 0 }],
+        [{ "node": "Claude Draft (Sonnet, brief)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Claude Draft (Opus)": { "main": [[{ "node": "Write HubSpot Task", "type": "main", "index": 0 }]] },
+    "Claude Draft (Sonnet, brief)": { "main": [[{ "node": "Write Sequence Step", "type": "main", "index": 0 }]] },
+    "Slack Alert": { "main": [[{ "node": "Log Outcome", "type": "main", "index": 0 }]] },
+    "Write HubSpot Task": { "main": [[{ "node": "Log Outcome", "type": "main", "index": 0 }]] },
+    "Write Sequence Step": { "main": [[{ "node": "Log Outcome", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "meta": {
+    "templateCreatedBy": "policy-signal-engine",
+    "description": "Daily Open States pull -> Claude classification -> vertical-aware scoring -> route to CRM tasks, sequences, or Slack alert. The Python script in scripts/run_pipeline.py is the equivalent reference implementation."
+  },
+  "tags": []
+}
