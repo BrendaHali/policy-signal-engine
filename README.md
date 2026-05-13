@@ -22,18 +22,18 @@ The structured pitch the system creates, the per-lane talk tracks the AE uses on
 
 ## Result, in pipeline terms
 
-| Step | Conversion | Output |
+| Step | Rate | Daily output |
 |---|---|---|
 | Routed actions per day | · | 55 |
-| AE acceptance | 25% | 14 |
-| Reply rate on accepted touches | 12% | 1.7 |
-| Meeting booked from reply | 30% | 0.5 |
-| Qualified opp from meeting | 50% | 0.25 |
-| Median ACV | $50,000 | $12,500 in pipeline created per day |
+| AE accepts and sends (matches the leading metric target in STRATEGY.md: > 60%) | 60% | 33 |
+| Reply rate on signal-triggered outbound | 10% | 3.3 |
+| Meeting booked from reply | 30% | 1 |
+| Qualified opp from meeting | 30% | 0.3 |
+| Median Enterprise ACV | $50,000 | **$15,000 in pipeline created per day** |
 
-System cost per day at this scope: $0.65 in Claude API spend. Steady state with classification cache active: under $0.20 per day at the same volume. Break-even is one qualified opportunity per quarter.
+Annualized: ~$3.75M of sourced pipeline per year across a 5-AE book, ~$750K per AE per year. System cost per day at this scope: $0.65 in Claude API spend, dropping to under $0.20 per day in steady state with the classification cache active. Break-even is one qualified opportunity per quarter; the operating ratio is roughly 23,000 dollars of pipeline created per dollar of API spend.
 
-The metric that matters is sourced pipeline dollars per AE per quarter, attributed to a policy signal as the first touch. Bills classified, matches scored, and other engineering counts are inputs to that number, not substitutes for it.
+These are projection rates, not measured outcomes. The metric the system is actually judged on is the leading metric in `docs/STRATEGY.md`: AE acceptance rate above 60%. Bills classified, matches scored, and other engineering counts are inputs to that number, not substitutes for it.
 
 ## Architecture
 
