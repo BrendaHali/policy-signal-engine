@@ -82,25 +82,6 @@ From `outputs/run_summary.json`:
 
 A reviewer can open `outputs/hubspot_tasks.json` and see fully drafted, account-specific briefings, not stub text. Engineering detail and the run command set live in [`docs/ENGINEERING.md`](docs/ENGINEERING.md).
 
-## JD capability map
-
-| Job description line | Where it lives |
-|---|---|
-| Build systems that turn raw data into pipeline, revenue signals, and outbound actions | `scripts/run_pipeline.py` end-to-end, `workflow/bill_to_action.json` |
-| Ingest, enrich, score, and route signals from product usage, policy activity, CRM/marketing data | Open States ingest, Claude classification, vertical-aware score, router with per-AE caps |
-| Develop and maintain automation pipelines across n8n, BigQuery, Clay, Pendo, HubSpot | n8n workflow, BigQuery analytics in `sql/`, HubSpot-shaped output in `outputs/hubspot_tasks.json` |
-| Translate signals into action by pushing outputs into outbound workflows, marketing campaigns, sales execution | `outputs/hubspot_tasks.json` (CRM tasks), `outputs/sequences.json` (outbound steps), `outputs/slack_alerts.json` (real-time pages) |
-| Partner with Sales, Marketing, RevOps to identify high-value opportunities | scoring config is editable per vertical so revenue partners tune weights and topic relevance themselves |
-| Own rapid experimentation on new signal types, targeting strategies, workflow designs | `scripts/weekly_reweight.py` proposes config changes from outcome data; new signal types are one Open States parameter or one new node |
-| Identify gaps in data coverage and work cross-functionally to ensure required inputs exist | `data/outcomes.json` schema includes the `outcome` field, filled by the Outcome Enrichment Agent; see `sql/03_outcomes_analysis.sql` for the warehouse rollup |
-| Improve system reliability, speed, output quality while reducing manual work | per-AE caps, classification cache, structured error log, dedupe by (bill, account), 16-test suite |
-| 3+ years in data, growth, RevOps or related technical role | reflected in choices: SQL warehousing patterns, weighted scoring instead of rules, proposal-not-apply for weight changes, agents with explicit confidence scores |
-| n8n / Make / Zapier or similar | `workflow/bill_to_action.json`, 17-node importable workflow |
-| SQL + BigQuery | `sql/` with three production-shaped queries |
-| LLMs, prompt design, agent-based systems | three production prompts in `prompts/` loaded into Python at runtime, two tool-using agents, structured-JSON outputs, model selection by branch |
-| APIs, data pipelines, integrating multiple systems | Open States REST, Anthropic Messages API, Slack webhooks, HubSpot-shaped outputs |
-| Translate ambiguous problems into working systems quickly | the repo itself, scoped and shipped from a job description |
-
 ## What to build next
 
 Documented in `docs/STRATEGY.md` ("Risk register" and "What this is not"). Three live items:
