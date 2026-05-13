@@ -24,30 +24,13 @@ from pathlib import Path
 import yaml
 from anthropic import Anthropic
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _lib import prompts
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUTPUTS = ROOT / "outputs"
 OUTPUTS.mkdir(exist_ok=True)
-
-REWEIGHT_SYSTEM = (
-    "You are a RevOps analyst proposing scoring weight adjustments based on outcome data. "
-    "Return strict JSON only."
-)
-
-REWEIGHT_USER_TMPL = """Current weights: {weights}
-Outcomes from the last 30 days (action_taken, score, outcome):
-{outcomes_csv}
-
-Identify the single weight (if any) that should be adjusted up or down by no more than 0.05, based on which factor most differentiates positive outcomes from null or negative ones.
-
-Return JSON:
-{{
-  "adjustment": {{"weight_name": delta}},
-  "rationale": "one sentence"
-}}
-
-If positive outcomes n < 20 in the period, return:
-{{"adjustment": {{}}, "rationale": "insufficient data"}}"""
 
 
 def _csv_outcomes(outcomes: list[dict]) -> str:
@@ -132,11 +115,12 @@ def main() -> int:
             print("set ANTHROPIC_API_KEY or use --dry-run", file=sys.stderr)
             return 2
         client = Anthropic(api_key=ak)
+        system, user_tmpl = prompts.load("reweight")
         msg = client.messages.create(
             model="claude-sonnet-4-6",
             max_tokens=400,
-            system=REWEIGHT_SYSTEM,
-            messages=[{"role": "user", "content": REWEIGHT_USER_TMPL.format(
+            system=system,
+            messages=[{"role": "user", "content": user_tmpl.format(
                 weights=json.dumps(weights), outcomes_csv=_csv_outcomes(recent)
             )}],
         )

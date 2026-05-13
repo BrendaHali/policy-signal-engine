@@ -10,13 +10,7 @@ The product is intent intelligence on legislative motion. The strategy is to be 
 
 The motion targets the Enterprise tier of a modern policy intelligence platform: all-50-state monitoring, industry-tuned keyword alerts, hearing transcripts, aggregated dashboards, dedicated account manager. The free or low-tier product (daily statehouse coverage with push alerts) is self-serve and out of scope. The mid-tier (Pro: bill tracking, multi-state monitoring) is inside-sales. Enterprise is field sales with an AE, a sales engineer, and an executive sponsor.
 
-The pitch the system creates writes itself because the prospect is already inside the problem:
-
-> "AB 1015 just got signed in Georgia. It changes the Self-insurers Guaranty Trust Fund funded levels, and your team is recalculating workers comp assessment exposure right now. Tracking bills like this across all fifty states by hand takes a Government Affairs analyst about forty hours a week. Our platform does it automatically, with industry-tuned keyword alerts, hearing transcripts, and a dashboard your compliance and legal teams share. Worth a fifteen-minute walk-through?"
-
-The structure is consistent across all three routing lanes: name the bill, name the specific operational pain, name the manual alternative, name the platform's answer, propose a small next step.
-
-The full motion (per-lane talk tracks, discovery questions, ROI model, land-and-expand path, renewal levers) lives in [`docs/MOTION.md`](MOTION.md). What follows here is the strategy that frames the motion.
+The pitch the system creates is structured because the prospect is already inside the problem. Name the bill, name the specific operational pain, name the manual alternative, name the platform's answer, propose a small next step. The canonical pitch script and the per-lane talk tracks (urgent, top-tier, bulk) live in [`MOTION.md`](MOTION.md). What follows here is the strategy that frames the motion.
 
 ## ICP
 

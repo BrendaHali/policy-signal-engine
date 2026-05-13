@@ -38,6 +38,7 @@ from anthropic import Anthropic
 
 from _lib.cache import ClassificationCache
 from _lib.errors import ErrorLog
+from _lib import prompts
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -131,36 +132,6 @@ def _normalize_bill(raw: dict[str, Any]) -> dict[str, Any]:
 
 # ---------- step 2: classify ----------
 
-CLASSIFIER_SYSTEM = (
-    "You are a policy analyst classifying state legislation for a B2B GTM team. "
-    "Return strict JSON only — no preamble, no commentary, no markdown fences."
-)
-
-CLASSIFIER_USER_TMPL = """Bill: {identifier} — {title}
-State: {state}
-Subjects: {subjects}
-Latest action ({latest_action_date}): {latest_action}
-
-Classify. Return JSON with exactly these fields:
-
-industries: array of tags from this controlled list:
-["healthcare", "insurance", "financial_services", "tech", "retail",
- "food_service", "energy", "manufacturing", "transportation",
- "education", "agriculture", "telecom", "real_estate",
- "advocacy_seniors", "advocacy_consumer"]
-
-urgency: integer 1-5
-  5 = floor vote or signing imminent
-  4 = committee action this week
-  3 = active in committee
-  2 = introduced and assigned
-  1 = dormant
-
-topic_summary: one sentence, max 25 words, naming the regulatory mechanism.
-
-affected_entities: array of 2-4 short phrases naming the company types most exposed."""
-
-
 def classify_bills(
     client: Anthropic,
     bills: list[dict[str, Any]],
@@ -185,12 +156,13 @@ def classify_bills(
             continue
 
         cache_stats["misses"] += 1
+        system, user_tmpl = prompts.load("classifier")
         try:
             msg = client.messages.create(
                 model="claude-sonnet-4-6",
                 max_tokens=400,
-                system=CLASSIFIER_SYSTEM,
-                messages=[{"role": "user", "content": CLASSIFIER_USER_TMPL.format(
+                system=system,
+                messages=[{"role": "user", "content": user_tmpl.format(
                     identifier=b["identifier"], title=b["title"], state=b["state"],
                     subjects=", ".join(b["subjects"][:8]) or "none",
                     latest_action_date=b["latest_action_date"], latest_action=b["latest_action"]
@@ -274,34 +246,14 @@ def match_and_score(bills: list[dict[str, Any]], accounts: list[dict[str, Any]],
 
 # ---------- step 4: draft & route ----------
 
-DRAFTER_SYSTEM = (
-    "You are drafting a sales briefing for a state policy intelligence platform's GTM team. "
-    "Tone: confident, factual, no hype, no exclamation. "
-    "Output the briefing only — no preamble, no signature."
-)
-
-DRAFTER_USER_TMPL = """Account: {account_name} ({industry})
-Account state footprint: {footprint}
-Bill: {identifier} — {title} ({state})
-Topic: {topic}
-Urgency: {urgency}/5
-Latest action: {latest_action} on {latest_action_date}
-
-Write a 3-part briefing for the AE:
-1. Why now — one sentence on the trigger.
-2. Why this account — one sentence on the specific exposure.
-3. Suggested open — one sentence the AE could lead with.
-
-Total length under 80 words."""
-
-
 def draft_briefing(client: Anthropic, m: Match, model: str) -> tuple[str, dict[str, int]]:
     cls = m.bill["classification"]
+    system, user_tmpl = prompts.load("drafter")
     msg = client.messages.create(
         model=model,
         max_tokens=300,
-        system=DRAFTER_SYSTEM,
-        messages=[{"role": "user", "content": DRAFTER_USER_TMPL.format(
+        system=system,
+        messages=[{"role": "user", "content": user_tmpl.format(
             account_name=m.account["name"], industry=m.account["industry"],
             footprint=", ".join(m.account["state_footprint"][:8]),
             identifier=m.bill["identifier"], title=m.bill["title"], state=m.bill["state"].upper(),
